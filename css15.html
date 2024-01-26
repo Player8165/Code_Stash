@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in css</title>
+    <style>
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            /* initializing the flex box  */
+            display: flex;
+            /* flex properties for flex conatiner  */
+            /* default flex is row  */
+            flex-direction: row;
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row-reverse wrap; */
+
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+
+            align-items: center;
+
+        }
+
+        .item {
+            background-color: rgb(209, 102, 44);
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #item-1 {
+            /* flex properties for flex item  */
+            order: 2;
+
+            flex-grow: 2;
+        }
+
+        #item-2 {
+            order: 3;
+            flex-grow: 3;
+        }
+
+        #item-3 {
+            order: 4;
+            
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox Gimic</h1>
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+    </div>
+</body>
+
+</html>

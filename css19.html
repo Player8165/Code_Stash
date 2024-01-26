@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attrtute and nth child pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input {
+            display: block;
+        }
+        input[type="text"] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target] {
+            font-size: 44px;
+            color: violet;
+        }
+        a[target='_self'] {
+            font-size: 44px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1><a href="http://google.com" target="_blank">Go To Google</a></h1>
+    <h1><a href="http://x.com" target="_self">Go To Twitter</a></h1>
+    <form action="" class="form-control">
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your password">
+        <input type="submit" value="submit">
+    </form>
+        <ul>
+            <li class="item" id="iitem-1">item1</li>
+            <li class="item" id="iitem-2">item2</li>
+            <li class="item" id="iitem-3">item3</li>
+            <li class="item" id="iitem-4">item4</li>
+            <li class="item" id="iitem-5">item5</li>
+        </ul>
+    </div>
+</body>
+</html>

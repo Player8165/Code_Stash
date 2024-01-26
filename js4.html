@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+    <div class="container">simple html</div>
+</body>
+<script>
+    let huh = 34;
+    let huh2 = "string";
+    let huh3 = true;
+    let huh4 = null;
+    let huh5 = undefined;
+
+    let employee = {
+        name: "Player",
+        salary: 10,
+        // you can call this in js console by using employee.channel 
+        channel: "Game with Player",
+        channel2: "Code with Player",
+        // you can call this in js console by using employee['channel3']
+        "channel3": "study with player",
+    }
+    console.log(employee)
+
+
+    let names = [2,8,6, "Player", null, undefined];
+    console.log(names);
+    console.log(names[5]);
+
+    names = names.sort();
+
+    // this helps to push an string to the array
+    names.push("Hello cruel world")
+
+    console.log(names.length);
+
+</script>
+
+</html>

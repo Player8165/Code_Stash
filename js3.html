@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Switch and if-else, Scope and conditionals</title>
+</head>
+
+<body>
+    <!-- use div>ul>li{item-$}*7 for this  -->
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+</body>
+<script>
+    var string1 = "this is a string"
+    console.log(string1);
+    const a = "This cannot be changed";
+    console.log(a);
+
+    let age = 34;
+    if (age > 18) {
+        console.log("You can drink cold drink");
+    }
+    else {
+        console.log("You can drink water");
+    }
+
+    const cups = 44;
+    switch (cups) {
+        case 4:
+            console.log("The value of cups id 4")
+            break;
+
+            case 42:
+            console.log("The value of cups id 42")
+            break;
+
+            case 43:
+            console.log("The value of cups id 43")
+            break;
+
+            case 44:
+            console.log("The value of cups id 44")
+            break;
+
+            default:
+                console.log("The value is not of above")
+                break;
+    }
+   
+</script>
+
+</html>
