@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objects</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Math Object</h1>
+    </div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        // Printing theFunctions From Math Object 
+
+        let x= 34.4645;
+        let y= 69.696969;
+
+        console.log("The value of a and b is ", x, y);
+        console.log("The value of a and b rounded is ", Math.round(x), Math.round(y));
+
+        // To Calculate The Powers in maths 
+        console.log("3 raised to power of 2 is ", Math.pow(3, 2));
+        console.log("9 raised to power of 4 is ", Math.pow(9, 4));
+
+        // To Calculate the square root in  maths 
+        console.log("square root of 36  is ", Math.sqrt(36));
+        console.log("square root of 42  is ", Math.sqrt(42));
+
+        // ceil and floor 
+        console.log("5.8 rounded up to nearest integer is", Math.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer is", Math.floor(5.8));
+
+        // Absolute value 
+        console.log("Absolute Value of 5.66 is ", Math.abs(5.66));
+        console.log("Absolute Value of -5.66 is ", Math.abs(-5.66));
+
+        // Trignometric functions 
+        console.log("The value of sin(pi) is ", Math.sin(Math.PI));
+        console.log("The value of tan(pi) is ", Math.tan(Math.PI));
+
+        // Min And Max functions 
+        console.log("Minimum value of 4,5,6 is", Math.min(4,5,6));
+        console.log("Maximum value of 6,79,4 is",Math.max(6,79,4));
+
+        // Generating a random number 
+        let r = Math.random();
+        let a=1;
+        let b=100;
+        let r1_100 = a + (b-a)*Math.random();
+        console.log("The random number is", r);
+        console.log("The random number is", r1_100);
+    </script>
+</body>
+</html>
